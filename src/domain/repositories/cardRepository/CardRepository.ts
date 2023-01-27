@@ -1,4 +1,4 @@
-import { Card, Failure } from "../../models";
+import { Card, Failure, LocaLStorageFailure } from "../../models";
 
 /**
  * Contract of the repository used by the {@link Card}
@@ -15,7 +15,7 @@ export interface CardRepository {
 	 * Gets the data from the local Storage
 	 * @returns Either the {@link Card}[] with only the mandatory fields or a {@link Failure}
 	 */
-	getCardsLS(): Card[] | Failure;
+	getCardsLS(): Card[] | LocaLStorageFailure;
 	/**
 	 * Contract of the getCardApi method
 	 * Gets the data of a specific card
