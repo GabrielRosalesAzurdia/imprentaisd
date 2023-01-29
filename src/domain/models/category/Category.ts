@@ -1,9 +1,9 @@
 /**
  * Interface for the card categories
  */
-export interface Category{
-    title:string
-    id:string
-    image:string
-    description:string
+export interface Category {
+    title: string;
+    id: number;
+    image: string;
+    description: string;
 }
